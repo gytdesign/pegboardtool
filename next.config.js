@@ -1,6 +1,9 @@
-// next.config.js
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // this tells Next.js to generate a static site
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, // ✅ This disables server-side image optimization
+  },
 };
 
 module.exports = nextConfig;
