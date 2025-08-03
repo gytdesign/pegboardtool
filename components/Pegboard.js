@@ -9,7 +9,6 @@ import {
   DragOverlay,
 } from '@dnd-kit/core';
 
-import '../styles/style.css'; // or 'globals.css' — adjust as needed
 
 function InventoryItem({ id, label }) {
   const { attributes, listeners, setNodeRef } = useDraggable({ id });
